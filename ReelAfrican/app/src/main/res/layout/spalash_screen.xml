@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_screen"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activity.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/registerImageView"
+        android:layout_width="@dimen/splashScreen_width"
+        android:layout_height="@dimen/splashScreen_height"
+        android:layout_below="@id/toolbar"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/studio" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="sound CLOUD"-->
+        <!--android:layout_below="@id/registerImageView"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textAppearance="?android:textAppearanceLarge" />-->
+
+    <LinearLayout
+        android:id="@+id/auth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/authenticate_height"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/signin_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/button_background"
+            android:text="Sign in"
+           android:textSize="@dimen/text_size"
+            android:textColor="@color/buttonTextColor"
+            android:textAllCaps="false"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/signup_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/skipbuttonColor"
+            android:text="Sign up"
+            android:textColor="@color/buttonTextColor"
+           android:textSize="@dimen/text_size"
+            android:textAllCaps="false"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>
+    </RelativeLayout>

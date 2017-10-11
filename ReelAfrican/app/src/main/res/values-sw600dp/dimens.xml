@@ -1,0 +1,96 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="txt">19dp</dimen>
+    <dimen name="imgheight">300dp</dimen>
+    <dimen name="imgwidth">300dp</dimen>
+    <dimen name="navwide">300dp</dimen>
+    <dimen name="toolbarheight">70dp</dimen>
+    <dimen name="singleimgwidth">130dp</dimen>
+    <dimen name="singleimgheight">186dp</dimen>
+    <dimen name="buttonheight">42dp</dimen>
+    <dimen name="titletxt">17dp</dimen>
+    <dimen name="indicatorheight">330dp</dimen>
+
+    ////details layout
+    <dimen name="play_icon_height">80dp</dimen>
+    <dimen name="play_icon_width">80dp</dimen>
+    <dimen name="play_icon_noti">50dp</dimen>
+
+
+    ////////////////////AUDIO////////////////////////////////////////////////////////////////////
+    ///splash screen
+    <dimen name="splashScreen_width">300dp</dimen>
+    <dimen name="splashScreen_height">300dp</dimen>
+    <dimen name="authenticate_height">70dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    ////sign in
+    <dimen name="login_layout">55dp</dimen>
+    <dimen name="login_layout_image_width">240dp</dimen>
+    <dimen name="login_layout_image_height">240dp</dimen>
+    <dimen name="facebook_logo">80dp</dimen>
+    <dimen name="view_height">2dp</dimen>
+    <dimen name="term_text_size">16sp</dimen>
+    <dimen name="login_text_size">18sp</dimen>
+    <dimen name="facebook_login_layout_height">65dp</dimen>
+
+    ///home fragment
+    <dimen name="viewpager_height">350dp</dimen>
+
+
+    ///profile activity
+    <dimen name="profile_padding">70dp</dimen>
+
+    //about us
+    <dimen name="aboutUs_layout_margintop">220dp</dimen>
+
+    //Navigation drawer
+    <dimen name="navigationdrawer_width">400dp</dimen>
+
+    //single card
+    <dimen name="singlecard_height">130dp</dimen>
+    <dimen name="singlecard_weight">130dp</dimen>
+
+    //multi_details
+    <dimen name="multi_details_image_height">300dp</dimen>
+
+    //listdata items
+    <dimen name="listdata_items_image">75dp</dimen>
+    <dimen name="listdata_item_text_size">18sp</dimen>
+
+    //list_items
+    <dimen name="listitems_text_size">22sp</dimen>
+    //audio player
+    <dimen name="player_progressbar_height">550dp</dimen>
+    <dimen name="player_progressbar_width">550dp</dimen>
+    <dimen name="player_progressbar_layout">400dp</dimen>
+    <dimen name="player_album_art">350dp</dimen>
+
+    //plan_row
+    <dimen name="plan_row_width">150dp</dimen>
+    <dimen name="plan_row_height">90dp</dimen>
+
+    //subscription
+    <dimen name="subscrption_layout_width">300dp</dimen>
+    <dimen name="subscrption_layout_height">230dp</dimen>
+    <dimen name="layoutBgImage_height">24dp</dimen>
+    <dimen name="subscriptionSelect_button_width">180dp</dimen>
+    <dimen name="subscriptionSelect_button_height">40dp</dimen>
+
+    //payment detail
+    <dimen name="card_charge_text_size">14sp</dimen>
+    <dimen name="cardlayout_height">250dp</dimen>
+    <dimen name="cardBackGroundImage_height">48dp</dimen>
+
+
+    //purchase_history_details
+    <dimen name="download_button_width">150dp</dimen>
+
+    //Adapter purchase_history
+    <dimen name="success_textSize">14sp</dimen>
+
+
+</resources>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackgroundColor"
+
+    >
+
+
+    <GridView
+        android:id="@+id/imagesGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:verticalSpacing="6dp"
+        android:horizontalSpacing="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@+id/toolbar"
+        />
+
+
+    <TextView
+        android:id="@+id/nocontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nodata"
+        android:textAllCaps="false"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminateDrawable="@drawable/large_progress_bar"
+        android:indeterminateDuration="1000"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

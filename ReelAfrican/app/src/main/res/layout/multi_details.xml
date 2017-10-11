@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/multipart_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blur"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/banner_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/multi_details_image_height"
+                android:scaleType="centerCrop"
+               />
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/play"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignBottom="@+id/banner_image"
+                android:layout_alignParentStart="true"
+               >
+
+                <TextView
+                    android:id="@+id/albumName_multipart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="16dp"
+                    tools:text="Remember to Forget you "
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/SongCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/albumName_multipart"
+                    android:fontFamily="serif"
+                    android:paddingLeft="16dp"
+                    tools:text="6 Songs"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/Content_title"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/albumName_multipart"
+                    android:layout_marginLeft="8dp"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@id/SongCount"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/albumName_multipart"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/SongCount"
+                    android:fontFamily="serif"
+                    tools:text="20,101 Downloaded"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView3"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_margin="8dp"-->
+                    <!--android:src="@drawable/shuffle" />-->
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/multi_details_image_height"
+                android:scaleType="fitXY"
+                android:alpha="0.5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/favourite_multi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:src="@drawable/favorite_unselected"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp" />
+        </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <android.support.v7.widget.RecyclerView
+            android:scrollbars="none"
+            android:layout_marginTop="16dp"
+            android:id="@+id/list_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+   />
+        <ImageView
+                android:id="@+id/overlay2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/multi_details_image_height"
+                android:alpha="0.7"
+                android:scaleType="fitXY"
+                />
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/minicontroller"
+                    android:id="@+id/miniController"/>
+            </RelativeLayout>
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--<include layout="@layout/content_bottom_up" />-->
+</FrameLayout>

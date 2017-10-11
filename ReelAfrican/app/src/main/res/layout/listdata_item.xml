@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blur"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/listsong_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_card"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="@dimen/listdata_items_image"
+                android:layout_height="@dimen/listdata_items_image"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="#585252"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/list_albumart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/image_card"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/list_songName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/listdata_item_text_size" />
+
+            <TextView
+                android:id="@+id/list_artistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/equaliser"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/list_option_menu"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:alpha="0.8"-->
+            <!--android:src="@drawable/play_icon" />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#383838"
+        android:id="@+id/divider"
+        android:layout_below="@+id/listsong_layout"
+        />
+    <TextView
+        android:layout_below="@+id/divider"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        android:id="@+id/listDummy"
+        android:layout_height="60dp" />
+</RelativeLayout>

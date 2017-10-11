@@ -1,0 +1,90 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="recy_margin">8dp</dimen>
+
+
+    ///////////////AUDIO////////////////////////////////////////////////////
+    <dimen name="textsize_signup">12sp</dimen>
+
+
+    ///splash screen
+    <dimen name="splashScreen_width">200dp</dimen>
+    <dimen name="splashScreen_height">200dp</dimen>
+    <dimen name="authenticate_height">60dp</dimen>
+    <dimen name="play_icon_noti">60dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    ////sign in
+    <dimen name="login_layout">55dp</dimen>
+    <dimen name="login_layout_image_width">150dp</dimen>
+    <dimen name="login_layout_image_height">100dp</dimen>
+    <dimen name="facebook_logo">80dp</dimen>
+    <dimen name="view_height">2dp</dimen>
+    <dimen name="term_text_size">16sp</dimen>
+    <dimen name="login_text_size">18sp</dimen>
+    <dimen name="facebook_login_layout_height">65dp</dimen>
+
+    ///home fragment
+    <dimen name="viewpager_height">260dp</dimen>
+
+
+    ///profile activity
+    <dimen name="profile_padding">40dp</dimen>
+
+    //about us
+    <dimen name="aboutUs_layout_margintop">220dp</dimen>
+
+    //Navigation drawer
+    <dimen name="navigationdrawer_width">280dp</dimen>
+
+    //single card
+    <dimen name="singlecard_height">110dp</dimen>
+    <dimen name="singlecard_weight">110dp</dimen>
+
+    //multi_details
+    <dimen name="multi_details_image_height">300dp</dimen>
+
+    //listdata items
+    <dimen name="listdata_items_image">50dp</dimen>
+    <dimen name="listdata_item_text_size">14sp</dimen>
+
+    //list_items
+    <dimen name="listitems_text_size">16sp</dimen>
+
+    ////
+    <dimen name="player_progressbar_height">450dp</dimen>
+    <dimen name="player_progressbar_width">450dp</dimen>
+    <dimen name="player_progressbar_layout">300dp</dimen>
+    <dimen name="player_album_art">230dp</dimen>
+    <dimen name="play_icon_height">45dp</dimen>
+    <dimen name="play_icon_width">45dp</dimen>
+
+    //plan_row
+    <dimen name="plan_row_width">120dp</dimen>
+    <dimen name="plan_row_height">90dp</dimen>
+
+    //subscription
+    <dimen name="subscrption_layout_width">300dp</dimen>
+    <dimen name="subscrption_layout_height">220dp</dimen>
+    <dimen name="layoutBgImage_height">24dp</dimen>
+    <dimen name="subscriptionSelect_button_width">150dp</dimen>
+    <dimen name="subscriptionSelect_button_height">55dp</dimen>
+
+    //payment detail
+
+    <dimen name="card_charge_text_size">14sp</dimen>
+    <dimen name="cardlayout_height">250dp</dimen>
+    <dimen name="cardBackGroundImage_height">28dp</dimen>
+
+    //Adapter purchase_history
+    <dimen name="success_textSize">10sp</dimen>
+
+
+    //purchase_history_details
+    <dimen name="download_button_width">150dp</dimen>
+
+</resources>

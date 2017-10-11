@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item
+
+        android:id="@+id/action_notifications"
+            android:icon="@drawable/ic_menu_notifications"
+        android:title="Notifications"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_filter1"
+        android:title="filter"
+        android:icon="@drawable/filter"
+        android:orderInCategory="101"
+        app:showAsAction="always|never"
+        />
+
+
+    <item
+        android:title=""
+        android:icon="@drawable/optionmanu"
+        android:orderInCategory="105"
+        app:showAsAction="always|never">
+        <menu>
+            <item
+                android:id="@+id/action_login"
+                android:icon="@drawable/login"
+                android:title="Login"/>
+
+            <item
+                android:id="@+id/menu_item_language"
+                android:icon="@drawable/language"
+                android:title="Language"/>
+            <item
+                android:id="@+id/action_register"
+                android:icon="@drawable/register"
+                android:title="Register"/>
+
+            <item
+                android:id="@+id/menu_item_profile"
+                android:icon="@drawable/register"
+                android:title="Profile"/>
+
+            <item
+                android:id="@+id/action_purchasehistory"
+                android:icon="@drawable/purchase_history"
+                android:title="Purchase History"/>
+
+            <item
+                android:id="@+id/action_mydownload"
+                android:icon="@drawable/action_download"
+                android:title="My Download"/>
+
+            <item
+                android:id="@+id/action_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+
+        </menu>
+    </item>
+
+
+
+
+
+
+</menu>

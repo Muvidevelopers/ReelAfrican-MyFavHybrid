@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/appBackgroundColor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="@dimen/plan_row_width"
+        android:layout_height="120dp">
+        <RelativeLayout
+            android:layout_width="@dimen/plan_row_width"
+            android:layout_height="@dimen/plan_row_height"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp">
+
+            <LinearLayout
+                android:layout_width="@dimen/plan_row_width"
+                android:layout_height="@dimen/plan_row_height"
+                android:orientation="horizontal"
+                android:background="@drawable/creditcard_bg_shape"
+                android:id="@+id/subscriptionDetailsTextView"
+                android:layout_below="@+id/subscriptionTitleTextView"
+                android:layout_centerHorizontal="true"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/plan_row_height"
+                    android:background="#1111"
+                    android:gravity="center"
+
+                    android:id="@+id/relativeplannamelayout">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quarterly"
+                        android:textColor="@color/textColor"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/planNameTextView"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/stroke"
+
+            android:id="@+id/select_planMark_relative"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            >
+
+            <ImageView
+                android:id="@+id/select_planMark"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/round_tick"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

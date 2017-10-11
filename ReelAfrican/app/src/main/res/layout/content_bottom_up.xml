@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:visibility="gone"
+    android:clickable="true"
+    app:behavior_peekHeight="60dp"
+    android:clipToPadding="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+
+
+    <include
+        layout="@layout/minicontroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <include
+        layout="@layout/activity_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/url_song"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAppearance="?android:textAppearanceMedium"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/blue"/>&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_below="@id/toolbar"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@android:color/black"-->
+        <!--android:clickable="false">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/albumArt_player_big_iv"-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="21dp"-->
+
+            <!--android:layout_marginTop="65dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/song_p_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/albumArt_player_big_iv"-->
+            <!--android:textAppearance="?android:textAppearanceMedium"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--tools:text="gggggggggggg" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/song_p_Albumname"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignStart="@+id/song_p_name"-->
+            <!--android:layout_below="@+id/song_p_name"-->
+            <!--android:paddingTop="16dp"-->
+            <!--android:textAppearance="?android:textAppearanceMedium"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--tools:text="gggggggggggg" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/current_duration"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/Progress_music"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:text="00:00"-->
+        <!--android:textAppearance="?android:textAppearanceMedium"-->
+        <!--android:textColor="@android:color/white" />-->
+
+
+
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/player_play_bt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="44dp"-->
+<!--/>-->
+    <!--<ImageView-->
+        <!--android:id="@+id/player_next_bt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="44dp"-->
+        <!--android:layout_toEndOf="@id/player_play_bt"-->
+        <!--android:paddingLeft="16dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/duration"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/current_duration"-->
+        <!--android:layout_alignBottom="@+id/current_duration"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:text="00:00"-->
+        <!--android:textAppearance="?android:textAppearanceMedium"-->
+        <!--android:textColor="@android:color/white" />-->
+    <!--<SeekBar-->
+        <!--android:id="@+id/Progress_music"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@id/player_play_bt"/>-->
+
+    <!--&lt;!&ndash;<View&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="1dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_above="@id/player_play_bt"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginBottom="4dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@android:color/darker_gray" />&ndash;&gt;-->
+    <!--<ImageView-->
+        <!--android:id="@+id/player_prev_bt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="44dp"-->
+        <!--android:layout_toStartOf="@id/player_play_bt"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:src="@drawable/play_icon"-->
+         <!--/>-->
+
+</RelativeLayout>
+

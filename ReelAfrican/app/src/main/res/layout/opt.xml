@@ -1,0 +1,62 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/black"
+    android:id="@+id/player_action_bar"
+    android:elevation="4dp"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/close_bottom_sheet"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/close_icon"/>
+        <ImageView
+            android:id="@+id/menuLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/logo"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottombar_moreicon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp">
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/notification_ic"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/default_dot"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/search"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

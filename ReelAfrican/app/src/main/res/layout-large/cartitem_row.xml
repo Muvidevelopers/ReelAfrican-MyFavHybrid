@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#171717"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/product_thumb"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_icon_detail"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="6"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Item Name"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/item_name">
+
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$.20"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/descriptioncolor"
+                    android:textSize="16sp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:text="Remove"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/green"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+
+                    android:id="@+id/remove" />
+
+                <Button
+                    android:text="Remove"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:background="@drawable/green"
+                    android:textAllCaps="false"
+                    android:visibility="invisible"
+                    android:textColor="@color/white"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    />
+
+
+
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="30dp"
+                    android:background="@color/episodeBackgroundColor"/>
+
+
+                <Button
+                    android:text="Add to Wishlist"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textSize="13dp"
+                    android:visibility="gone"
+                    android:background="@drawable/white"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:id="@+id/addtowhishlist" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/add_item"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/iteam_amount"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/quantity"
+                android:text="0"
+                android:textColor="@color/button_background"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/remove_item"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="42sp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
